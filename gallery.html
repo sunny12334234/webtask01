@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .div {
+            width: 100%;
+            background: red;
+            padding: 5px;
+            margin-bottom: 50px;
+        }
+
+        .divv {
+            width: 100%;
+            background: red;
+            padding: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .div1,
+        .div2,
+        .div3 {
+            margin-bottom: 5px;
+        }
+
+        .div1 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            margin-right: 5px;
+            float: left;
+        }
+
+        .div2 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            margin-left: 5px;
+            float: right;
+        }
+
+        .div3 {
+            background: blue;
+            margin-left: 105px;
+            margin-right: 105px;
+            height: 100px;
+        }
+
+        .diva,
+        .divb {
+            width: 100px;
+            height: 100px;
+            background: greenyellow;
+        }
+
+        .divc {
+            height: 100px;
+            background: greenyellow;
+            margin: 0 105px 0 105px;
+        }
+
+        .diva {
+            position: absolute;
+            /* top: 5px;
+            left: 5px; */
+        }
+
+        .divb {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        .flt {
+            float: left;
+            height: 100px;
+            background: teal;
+        }
+
+        .centerWrap {
+            width: 100%;
+        }
+
+        .left {
+            width: 100px;
+            margin-left: -100%;
+            background-color: #0000FF;
+        }
+
+        .right {
+            width: 100px;
+            margin-left: -100px;
+            background-color: #0000FF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+    </div>
+    <div class="divv">
+        <div class="diva">diva</div>
+        <div class="divb">divb</div>
+        <div class="divc">divc</div>
+    </div>
+    <div class="divv">
+        <div class="centerWrap flt">
+            <div class="center flt">center</div>
+        </div>
+        <div class="left flt">left</div>
+        <div class="right flt">right</div>
+    </div>
+</body>
+
+</html>
